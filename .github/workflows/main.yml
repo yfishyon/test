@@ -18,3 +18,8 @@ jobs:
        
        
        python sdat2img.py system.transfer.list system.new.dat system.img
+    - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files:  /home/runner/work/test/test/system.img
+          fail_on_unmatched_files: true
