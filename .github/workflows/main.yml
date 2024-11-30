@@ -21,7 +21,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: system
-        path: /home/runner/work/test/test/system.img
+        path: system.img
 
     - name: released
       uses: softprops/action-gh-release@v2
