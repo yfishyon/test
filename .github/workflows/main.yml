@@ -17,6 +17,11 @@ jobs:
        pip install brotli
        brotli -d system.new.dat.br
        python sdat2img.py system.transfer.list system.new.dat system.img
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: system
+        path: /home/runner/work/test/test/system.img
 
     - name: released
       uses: softprops/action-gh-release@v2
