@@ -15,11 +15,10 @@ jobs:
        wget https://github.com/danielmmmm/dat2img/raw/master/sdat2img.py
        pip install brotli
        brotli -d system.new.dat.br
-       
-       
        python sdat2img.py system.transfer.list system.new.dat system.img
+
     - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files:  /home/runner/work/test/test/system.img
-          fail_on_unmatched_files: true
+       uses: softprops/action-gh-release@v1
+       with:
+        files:  /home/runner/work/test/test/system.img
+        fail_on_unmatched_files: true
