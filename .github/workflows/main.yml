@@ -12,14 +12,13 @@ jobs:
        wget -q https://github.com/Tkiliay/android_device_xiaomi_grus/releases/download/Stable/Cherish-OS-v4.3-20230102-0855-grus-UNOFFICIAL-GApps.zip
        unzip Cherish-OS-v4.3-20230102-0855-grus-UNOFFICIAL-GApps.zip
        ls
+       pwd
        wget https://github.com/danielmmmm/dat2img/raw/master/sdat2img.py
        pip install brotli
        brotli -d system.new.dat.br
        python sdat2img.py system.transfer.list system.new.dat system.img
 
     - name: released
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         files:  /home/runner/work/test/test/system.img
-        draft: false
-        fail_on_unmatched_files: true
