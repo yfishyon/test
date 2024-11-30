@@ -21,4 +21,5 @@ jobs:
     - name: released
       uses: softprops/action-gh-release@v2
       with:
-        files:  /home/runner/work/test/test/system.img
+        files: /home/runner/work/test/test/system.img
+        tag_name: test1 
