@@ -21,5 +21,10 @@ jobs:
     - name: released
       uses: softprops/action-gh-release@v2
       with:
+        tag_name: ${{ github.ref }}
+        name: Release ${{ github.ref }}
+        body: TODO New Release.
+        draft: false
+        prerelease: false
         files: /home/runner/work/test/test/system.img
-        tag_name: test2
+        
