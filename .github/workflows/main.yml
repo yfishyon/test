@@ -1,0 +1,14 @@
+name: release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: get release
+      run: |
+       wget https://github.com/Tkiliay/android_device_xiaomi_grus/releases/download/Stable/Cherish-OS-v4.3-20230102-0855-grus-UNOFFICIAL-GApps.zip
+       unzip Cherish-OS-v4.3-20230102-0855-grus-UNOFFICIAL-GApps.zip
+       ls
