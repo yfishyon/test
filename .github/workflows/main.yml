@@ -17,8 +17,9 @@ jobs:
        brotli -d system.new.dat.br
        python sdat2img.py system.transfer.list system.new.dat system.img
 
-    - name: release
+    - name: released
       uses: softprops/action-gh-release@v1
       with:
         files:  /home/runner/work/test/test/system.img
+        draft: false
         fail_on_unmatched_files: true
