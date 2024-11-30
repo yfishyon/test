@@ -27,4 +27,5 @@ jobs:
         draft: false
         prerelease: false
         files: /home/runner/work/test/test/system.img
+        token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
         
