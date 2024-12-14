@@ -9,8 +9,8 @@ jobs:
     steps:
     - name: get release
       run: |
-       wget -q https://github.com/Tkiliay/android_device_xiaomi_grus/releases/download/Stable/Cherish-OS-v4.3-20230102-0855-grus-UNOFFICIAL-GApps.zip
-       unzip Cherish-OS-v4.3-20230102-0855-grus-UNOFFICIAL-GApps.zip
+       wget -q https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.9.0.UMRCNXM/miui_MARBLE_OS1.0.9.0.UMRCNXM_b344a079ab_14.0.zip
+       unzip miui_MARBLE_OS1.0.9.0.UMRCNXM_b344a079ab_14.0.zip
        ls
        pwd
        wget https://github.com/danielmmmm/dat2img/raw/master/sdat2img.py
