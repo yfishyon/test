@@ -1,0 +1,13 @@
+name: boot
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: get release
+      run: |
+      pip install git+https://github.com/5ec1cff/payload-dumper
+      payload_dumper --partitions boot  https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.9.0.UMRCNXM/miui_MARBLE_OS1.0.9.0.UMRCNXM_b344a079ab_14.0.zip
