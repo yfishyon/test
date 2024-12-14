@@ -9,8 +9,7 @@ jobs:
     steps:
     - name: get release
       run: |
-       apt install axel
-       axel -n 10 -q https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.9.0.UMRCNXM/marble_images_OS1.0.9.0.UMRCNXM_20241009.0000.00_14.0_cn_5c3cb96fcd.tgz
+       sudo apt install axel;axel -n 10 -q https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.9.0.UMRCNXM/marble_images_OS1.0.9.0.UMRCNXM_20241009.0000.00_14.0_cn_5c3cb96fcd.tgz
        tar zxvf *.tgz
        ls
        pwd
